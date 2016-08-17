@@ -1,0 +1,103 @@
+      * {
+        text-align: center;
+      }
+
+      h1 {
+        color: rgb(255,0,255);
+      }
+      h2 {
+        color: rgb(0, 0, 255)
+      }
+      h3 {
+        color: yellow;
+      }
+      ol {
+        color: pink;
+        background-color: purple;
+      }
+      p a {
+        color: green;
+      }
+      input {
+        text-align: center;
+        padding:6px 12px 6px 12px;
+        border: 1px solid #665544;
+      }
+      .important {
+        background-color: yellow;
+        color: red;
+        font-weight: bolder;
+        font-size: 2em;
+      }
+      .nice-to-know {
+        font-size: .75em;
+        font-weight: lighter;
+      }
+      .video-container {
+        border: 10px;
+      }
+      .caption {
+        color: white;
+        background-color: red;
+      }
+      #container {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      #p1 {
+        color: #00FF00;
+      }
+      #p2 {
+        color: turquoise;
+      }
+      #p3 {
+        color: rgb(250,128,114);
+      }
+      #p4 {
+        color: #A0522D;
+        background-color:pink;
+      }
+      #li1 {
+        color: #DD45FF;
+      }
+      #li2 {
+        background-color: brown;
+      }
+      #li3 {
+        color: rgb(175, 14, 56);
+      }
+      #li4 {
+        color: #AA45F3;
+      }
+      #lead-video {
+        opacity: 0.6;
+      }
+      #div1 {
+        background-image: url("http://www.chickensmoothie.com/oekaki/image/image.php?id=102021&size=large&format=auto&rev=1276051317");
+        width: 600px;
+        height: 400px;
+      }
+      #nav {
+        background-color: black;
+        text-align: center;
+      }
+      #header {
+        text-align: center;
+      }
+      #footer {
+        color: blue;
+        background-color: red;
+        border-width: 3px
+        text-align: center;
+      }
+      #content {
+        color: pink;
+        background-color: white;
+        margin: 10px
+        text-align: center;
+      }
+      #footer {
+        background-color: orange;
+        text-align: center;
+      }
+

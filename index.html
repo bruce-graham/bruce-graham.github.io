@@ -3,53 +3,11 @@
 <html>
   <head>
     <title> brucegraham.io </title>
+    <link rel="stylesheet" href="style.css">
     <style>
       body {
-        background-color: red;
+        background-image: url("http://www.hdwidewallpaper.com/wp-content/uploads/2016/04/chicago-city-awesome-background-desktop-wallpapers-in-hd.jpg");
       }
-      h1 {
-        color: rgb(255,0,255);
-      }
-      h2 {
-        color: rgb(0, 0, 255)
-      }
-      h3 {
-        color: yellow;
-      }
-      ol {
-        color: pink;
-        background-color: purple;
-      }
-      #container {
-        width: 960px;
-        margin: 0 auto;
-      }
-      #p1 {
-        color: #00FF00;
-      }
-      #p2 {
-        color: turquoise;
-      }
-      #p3 {
-        color: rgb(250,128,114);
-      }
-      #p4 {
-        color: #A0522D;
-        background-color:pink;
-      }
-      #li1 {
-        color: #DD45FF;
-      }
-      #li2 {
-        background-color: brown;
-      }
-      #li3 {
-        color: rgb(175, 14, 56);
-      }
-      #li4 {
-        color: #AA45F3;
-      }
-
     </style>
   </head>
 
@@ -66,10 +24,13 @@
         <!--This is the nav bar fool!-->
       </ul>
 
-      <h1>Having Fun Testing HTMl and CSS</h1>
+      <hr>
+
+      <h1>Having Fun Testing HTML and CSS</h1>
       <p>Fun Times!!!</p>
 
       <p>
+        <a>Check this out</a>
         <audio controls="controls">
           <source src="http://www.stephaniequinn.com/Music/Commercial%20DEMO%20-%2015.mp3" type="audio/mpeg">">audio</source>
         </audio>
@@ -82,6 +43,44 @@
         <h3>Javascript</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6MaOPdQPvow" frameborder="0" allowfullscreen></iframe>
       </p>
+
+      <div>
+        <h3>Testing Out Forms</h3>
+        <form action="https://formspree.io/brucegraham11@gmail.com" method="POST">
+
+          <label for="firstname">first name</label>
+          <input type="text" name="firstname" pattern="[A-Za-z]" required><br>
+
+          <label for="username">username</label>
+          <input type="text" name="username" pattern="[A-Za-z]" required><br>
+
+          <label for="password">password</label>
+          <input type="password" name="password" pattern="[A-Za-z]" min="8" required><br>
+
+          <label for="email">email</label>
+          <input type="email" name="_replyto" required><br>
+
+          <input type="checkbox" name="vehicle" value="Bike">I own a bike<br>
+          <input type="checkbox" name="vehicle" value="Car">I own a vehicle<br>
+
+          <input type="radio" name="gender" value="male">Male<br>
+          <input type="radio" name="gender" value="female">Female<br>
+          <input type="radio" name="gender" value="other">Other<br>
+          <input type="date" name="date" value="date"><br>
+
+          <textarea name="usermessage" rows="8" cols="40" required></textarea><br>
+          <input type="submit" value="Send">
+
+        </form>
+
+
+      </div>
+
+
+
+
+
+
     </div>
   </body>
 </html>
