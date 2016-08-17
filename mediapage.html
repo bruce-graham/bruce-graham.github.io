@@ -18,6 +18,10 @@
     p {
       background-color: pink;
     }
+    #container {
+      width: 960px;
+      margin: 0 auto;
+    }
     #lead-video {
       opacity: 0.6;
     }
@@ -37,34 +41,35 @@
   </head>
 
   <body>
-    <ul>
-      <li>
-        <a href="index.html">Home Page</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="vacation.html">My Vacation</a>
-        <a href="mediapage.html">Media Page</a>
-        <a href="blog.html">Blog Page</a>
-      </li>
-      <!--This is the nav bar fool!-->
-    </ul>
-    <h1>Its the Media Page!!!!</h1>
+    <div id="container">
+      <ul>
+        <li>
+          <a href="index.html">Home Page</a>
+          <a href="aboutme.html">About Me</a>
+          <a href="vacation.html">My Vacation</a>
+          <a href="mediapage.html">Media Page</a>
+          <a href="blog.html">Blog Page</a>
+        </li>
+        <!--This is the nav bar fool!-->
+      </ul>
+      <h1>Its the Media Page!!!!</h1>
 
-    <audio controls="controls">
-      <source src="song.mp3" type ="audio/mp3">
-    </audio>
+      <audio controls="controls">
+        <source src="song.mp3" type ="audio/mp3">
+      </audio>
 
-    <p>
-      <h3 class="caption">Funny Or Die Webpage</h3>
-      <iframe src="http://www.funnyordie.com/" height="400" width="850"></iframe>
-    </p>
+      <p>
+        <h3 class="caption">Funny Or Die Webpage</h3>
+        <iframe src="http://www.funnyordie.com/" height="400" width="850"></iframe>
+      </p>
 
-    <p class="video-container">
-      <h3 class="caption">Funny Youtube Compilation</h3>
-      <iframe id="lead-video" width="560" height="315" src="https://www.youtube.com/embed/bhRP5Prr2NU" frameborder="0" allowfullscreen></iframe>
-    </p>
+      <p class="video-container">
+        <h3 class="caption">Funny Youtube Compilation</h3>
+        <iframe id="lead-video" width="560" height="315" src="https://www.youtube.com/embed/bhRP5Prr2NU" frameborder="0" allowfullscreen></iframe>
+      </p>
 
-    <div id="div1">Having Fun!!!</div>
-
+      <div id="div1">Having Fun!!!</div>
+    </div>
 
   </body>
 </html>
