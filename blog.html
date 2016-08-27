@@ -2,50 +2,61 @@
 
 <html>
   <head>
-    <title></title>
+    <title>Blog Page</title>
     <link href="style.css" rel="stylesheet">
-    <style>
-      body {
-        background-image: url("http://www.walldevil.com/wallpapers/w03/888895-funny-green-background-simple-background-yoda.jpg");
-      }
-    </style>
   </head>
 
-  <body>
+  <body id="blog-background">
+
+    <div id="header">
+      <span id="brand">
+        <img src="http://g01.a.alicdn.com/kf/HTB1oipVJVXXXXbEXFXXq6xXFXXXV/jigsaw-QUALITY-1000-pieces-landscape-puzzle-for-adult-CITY-beautiful-sunset-construction-natural-BEACH-PUZZLE-GAMES.jpg_50x50.jpg">Test Website
+      </span>
+      <span id="nav">
+        <ul>
+          <li>
+            <a href="index.html">Home Page</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="vacation.html">My Vacation</a>
+            <a href="mediapage.html">Media Page</a>
+            <a href="blog.html">Blog Page</a>
+          </li>
+        </ul>
+      </span>
+    </div>
+
     <div id="container">
+      <div id="content">
+        <hr>
+        <div>
+          <h1 id="header">My Blog Post <span class="important" Page!!!!</span></h1>
+        </div>
 
-      <ul>
-        <li>
-          <a href="index.html">Home Page</a>
-          <a href="aboutme.html">About Me</a>
-          <a href="vacation.html">My Vacation</a>
-          <a href="mediapage.html">Media Page</a>
-          <a href="blog.html">Blog Page</a>
-        </li>
-        <!--This is the nav bar fool!-->
-      </ul>
+        <div>
+          <span id="content">
+            <h3 >Content Area</h3>
+            <p>Check out my <span class="important" amazing</span> content here!!!</p>
+            <h6><span class="nice-to-know">Subheading!</span></h6>
+            <p><span class="nice-to-know" The part under the subheading here!</span></p>
+          </span>
+        </div>
 
-      <hr>
+        <hr>
+        <form action="/html/tags/html_form_tag_action.cfm" method="post">
+          <div>
+          <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+          Hey... say something!
+          </textarea>
+          </div>
+          <input type="submit" value="Submit">
+        </form>
 
-      <div>
-        <h1 id="header">My Blog Post <span class="important" Page!!!!</span></h1>
+        <hr>
+
+        <div class="align-center">
+          <footer id="the-funk">Contact Email: example@example.com <span class="important">Disclaimer:</span> All rights reserved 2016</footer>
+        </div>
       </div>
-
-      <div>
-        <span id="content">
-          <h3 >Content Area</h3>
-          <p>Check out my <span class="important" amazing</span> content here!!!</p>
-          <h6><span class="nice-to-know">Subheading!</span></h6>
-          <p><span class="nice-to-know" The part under the subheading here!</span></p>
-        </span>
-      </div>
-
-      <hr>
-
-      <div class="align-center">
-        <footer id="the-funk">Contact Email: example@example.com <span class="important">Disclaimer:</span> All rights reserved 2016</footer>
-      </div>
-
     </div>
   </body>
 </html>

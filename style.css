@@ -23,6 +23,24 @@
         padding:6px 12px 6px 12px;
         border: 1px solid #665544;
       }
+      input.submit:hover {
+        background-color: #665544;
+      }
+      textarea:hover {
+        background-color: pink;
+      }
+      textarea:focus {
+        background-color: red;
+      }
+      input[type="submit"]:hover {
+        background-color: chocolate;
+      }
+      input[type="text"]:hover {
+        background-color: purple;
+      }
+      input.text:focus {
+        color: red;
+      }
       .important {
         background-color: yellow;
         color: red;
@@ -40,9 +58,59 @@
         color: white;
         background-color: red;
       }
+      #index-background {
+        background-image: url("http://www.hdwidewallpaper.com/wp-content/uploads/2016/04/chicago-city-awesome-background-desktop-wallpapers-in-hd.jpg");
+      }
+      #aboutme-background {
+        background-image: url("http://feelgrafix.com/data_images/out/2/741899-awesome-nature-background.jpg");
+      }
+      #vacation-background {
+        background-image: url("http://cdn.wallpapersafari.com/20/44/ztCj4q.jpg");
+      }
+      #media-background {
+        background-image: url("http://static1.squarespace.com/static/5554afd4e4b03e9b3e7c0a44/55707a0ce4b072236bd945cd/55707aa9e4b072236bd968df/1431192639000/i2xmhay.jpg?format=original");
+      }
+      #blog-background {
+        background-image: url("http://www.walldevil.com/wallpapers/w03/888895-funny-green-background-simple-background-yoda.jpg");
+      }
       #container {
-        width: 1000px;
+        width: 960px;
         margin: 0 auto;
+      }
+      #content {
+        color: pink;
+        margin: 10px
+        text-align: center;
+        width: 75%;
+        float: left;
+      }
+      #brand {
+        color: white;
+        float: left;
+      }
+      #nav {
+        text-align: center;
+      }
+      #header {
+        text-align: center;
+        width: 960px;
+        margin: 0 auto;
+      }
+      #footer {
+        color: blue;
+        background-color: red;
+        border-width: 3px
+        text-align: center;
+      }
+      #sidebar {
+        background-image: url("http://vignette3.wikia.nocookie.net/mrmen/images/d/d2/Mrtallimage.png/revision/latest?cb=20130222100629");
+        width: 25%;
+        float: right;
+
+      }
+      #footer {
+        background-color: orange;
+        text-align: center;
       }
       #p1 {
         color: #00FF00;
@@ -77,27 +145,5 @@
         width: 600px;
         height: 400px;
       }
-      #nav {
-        background-color: black;
-        text-align: center;
-      }
-      #header {
-        text-align: center;
-      }
-      #footer {
-        color: blue;
-        background-color: red;
-        border-width: 3px
-        text-align: center;
-      }
-      #content {
-        color: pink;
-        background-color: white;
-        margin: 10px
-        text-align: center;
-      }
-      #footer {
-        background-color: orange;
-        text-align: center;
-      }
+
 
