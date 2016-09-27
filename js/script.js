@@ -16,8 +16,10 @@ $.ajax({
       // data.data[x].images.standard_resolution.url - URL of image 612х612
       // data.data[x].link - Instagram post URL
     }
+    $(".section.loading.background-white").removeClass('loading');
   },
   error: function(data){
     console.log(data);
   }
 });
+

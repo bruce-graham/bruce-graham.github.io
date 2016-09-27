@@ -4,11 +4,11 @@
  * Copyright 2016, Vision Design - graphic zoo
  * Free to use under the MIT license.
 */
-* {  
+* {
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
-  margin:0;	
+  margin:0;
 }
 body {
   background:none repeat scroll 0 0 #d3d3d3;
@@ -20,14 +20,14 @@ h1,h2,h3,h4,h5,h6 {
   color:#152732;
   font-weight: normal;
   line-height: 1.3;
-  margin:0.5rem 0;  
+  margin:0.5rem 0;
 }
 h1 {font-size:2.7rem;}
-h2 {font-size:2.2rem;}  
-h3 {font-size:1.8rem;}  
-h4 {font-size:1.4rem;}  
-h5 {font-size:1.1rem;}  
-h6 {font-size:0.9rem;}    
+h2 {font-size:2.2rem;}
+h3 {font-size:1.8rem;}
+h4 {font-size:1.4rem;}
+h5 {font-size:1.1rem;}
+h6 {font-size:0.9rem;}
 a, a:link, a:visited, a:hover, a:active {
   text-decoration:none;
   color:#9BB800;
@@ -36,7 +36,7 @@ a, a:link, a:visited, a:hover, a:active {
   -ms-transition:color 0.20s linear 0s;
   -moz-transition:color 0.20s linear 0s;
   -webkit-transition:color 0.20s linear 0s;
-}  
+}
 a:hover {color:#B6C900;}
 p,li,dl,blockquote,table,kbd {
   font-size: 0.85rem;
@@ -55,7 +55,7 @@ img {
 .owl-item img, .full-img {
   max-width: none;
   width:100%;
-}  
+}
 table {
   background:none repeat scroll 0 0 #fff;
   border:1px solid #f0f0f0;
@@ -75,8 +75,8 @@ td {border-right:1px solid #f0f0f0;}
 hr {
   border: 0;
   border-top: 1px solid #e5e5e5;
-  clear:both;  
-  height:0; 
+  clear:both;
+  height:0;
   margin:2.5rem auto;
 }
 li {padding:0;}
@@ -135,10 +135,10 @@ nav {
   cursor:pointer;
 }
 .top-nav li a {
-  color:#fff; 
+  color:#fff;
   display:block;
   font-size:1rem;
-  padding:1.25rem; 
+  padding:1.25rem;
 }
 .top-nav li ul li a {
   background:none repeat scroll 0 0 #152732;
@@ -160,7 +160,7 @@ nav {
   display: inline-block;
   font-size: 0.7rem;
   height: 1.3rem;
-  line-height: 1.3rem; 
+  line-height: 1.3rem;
   margin: 0 0 -0.3125rem 0.3125rem;
   text-align: center;
   width: 1.3rem;
@@ -177,21 +177,21 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 .aside-nav > ul > li.active-item > a:link,.aside-nav > ul > li.active-item > a:visited {
   background:none repeat scroll 0 0 rgba(153, 153, 153, 0.25);
   color:#fff;
-} 
+}
 @media screen and (min-width:769px) {
   .aside-nav .count-number {
-	  margin-left:-1.25rem;	
-	  float:right;	
+	  margin-left:-1.25rem;
+	  float:right;
   }
   .top-nav li:hover > ul {
 	  display:block;
 	  z-index:10;
-  }  
+  }
   .top-nav li:hover > ul ul {
     left:100%;
     margin:-2.5rem 0;
     width:100%;
-  } 
+  }
 }
 .nav-text,.aside-nav-text {display:none;}
 .aside-nav a,.aside-nav a:link,.aside-nav a:visited,.aside-nav li > ul,.top-nav a,.top-nav a:link,.top-nav a:visited {
@@ -202,7 +202,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   -webkit-transition:background 0.20s linear 0s;
 }
 .aside-nav ul {
-  background:#e8e8e8; 
+  background:#e8e8e8;
   padding:0;
 }
 .aside-nav li {
@@ -214,7 +214,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   display:block;
   font-size:1rem;
   padding:1.25rem;
-  border-bottom:1px solid #d2d2d2; 
+  border-bottom:1px solid #d2d2d2;
 }
 .aside-nav > ul > li:last-child a {border-bottom:0 none;}
 .aside-nav li > ul {
@@ -244,7 +244,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   font-size:0.6rem;
   margin:0 0.625rem 0 -1.25rem;
   width:0.625rem;
-} 
+}
 .aside-nav li li a:link, .aside-nav li li a:visited {background:none;}
 .aside-nav .show-aside-ul, .aside-nav .active-aside-item {height:auto;}
 .padding {
@@ -282,7 +282,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 .l-offset-9 {margin-left:75%;}
 .l-offset-10 {margin-left:83.3333%;}
 .l-offset-11 {margin-left:91.6666%;}
-.l-offset-12 {margin-left:100%;} 
+.l-offset-12 {margin-left:100%;}
 .s-1 {width:8.3333%;}
 .s-2 {width:16.6666%;}
 .s-five {width:16.6666%;}
@@ -329,7 +329,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 .l-11 {width:91.6666%;}
 .l-12 {width:100%;}
 .right {float:right;}
-.left {float:left;}  
+.left {float:left;}
 @media screen and (max-width:768px) {
   .size-960,.size-1140,.size-1280 {max-width:768px;}
   .hide-l,.hide-s {display:block;}
@@ -353,7 +353,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
     margin-top:0;
     position:relative;
     right:0;
-  } 
+  }
   .top-nav li ul li a {min-width:100%;}
   .top-nav li {
     float:none;
@@ -375,13 +375,13 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
     color:#fff;
   }
   .top-nav li ul,.top-nav li ul li ul {
-    display:block;  
-    overflow:hidden; 
-    height:0;   
-  } 
+    display:block;
+    overflow:hidden;
+    height:0;
+  }
   .top-nav > ul ul.show-ul {
     display:block;
-    height:auto;  
+    height:auto;
   }
   .top-nav li ul li a {
     background:none repeat scroll 0 0 #9d9d9d;
@@ -421,7 +421,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   .m-offset-9 {margin-left:75%;}
   .m-offset-10 {margin-left:83.3333%;}
   .m-offset-11 {margin-left:91.6666%;}
-  .m-offset-12 {margin-left:100%;} 
+  .m-offset-12 {margin-left:100%;}
   .l-1 {width:8.3333%;}
   .l-2 {width:16.6666%;}
   .l-five {width:20%;}
@@ -490,7 +490,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   }
   .hide-l,.hide-m {display:block;}
   .hide-s {display:none;}
-  .count-number {margin-right:-1.25rem;} 
+  .count-number {margin-right:-1.25rem;}
   .l-offset-1,.l-offset-2,.l-offset-five,.l-offset-3,.l-offset-4,.l-offset-5,.l-offset-6,.l-offset-7,.l-offset-8,.l-offset-9,.l-offset-10,.l-offset-11,.l-offset-12,
   .m-offset-1,.m-offset-2,.m-offset-five,.m-offset-3,.m-offset-4,.m-offset-5,.m-offset-6,.m-offset-7,.m-offset-8,.m-offset-9,.m-offset-10,.m-offset-11,.m-offset-12 {margin-left:0;}
   .s-offset-1 {margin-left:8.3333%;}
@@ -505,7 +505,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   .s-offset-9 {margin-left:75%;}
   .s-offset-10 {margin-left:83.3333%;}
   .s-offset-11 {margin-left:91.6666%;}
-  .s-offset-12 {margin-left:100%;} 
+  .s-offset-12 {margin-left:100%;}
   .l-1 {width:8.3333%;}
   .l-2 {width:16.6666%;}
   .l-five {width:20%;}
@@ -545,9 +545,12 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   .s-10 {width:83.3333%;}
   .s-11 {width:91.6666%;}
   .s-12 {width:100%}
-}  
+}
 .center {
   float:none;
   margin:0 auto;
   display:block;
+}
+.loading {
+  background: transparent url('http://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif') center no-repeat;
 }
