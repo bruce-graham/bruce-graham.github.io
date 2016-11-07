@@ -8,7 +8,6 @@ $.ajax({
   type: 'GET',
   data: {access_token: token, count: num_photos},
   success: function (data) {
-    console.log(data);
     for(var x in data.data) {
       $('.margin').append('<div class="s-12 m-6 l-4"><div class="image-with-hover-overlay image-hover-zoom margin-bottom"><a target="_blank" href="' + data.data[x].link +'"><div class="image-hover-overlay background-primary"><div class="image-hover-overlay-content text-center padding-2x"><p>Quote: ' + data.data[x].caption.text + '</p></div></div><img src="' + data.data[x].images.standard_resolution.url + '" alt="" title="Photography" /></div></a></div>');
       // data.data[x].images.low_resolution.url - URL of image, 306х306
