@@ -56,28 +56,25 @@
             <h2 class="text-size-40 margin-bottom-30">Strict Equality vs Loose Equality<span class="text-size-20">- 01/10/2017</span></h2>
             <hr class="break-small background-primary margin-bottom-30">
             <p>
-              Today lets talk about two types of JavaScript equalities.  The first of the two equalities is known as strict equality aka the triple equal operator which shows up in our code as ===. The second of the two equalities know as loose equality aka the double equal operator shows up in our code as ==.
+              Today lets talk about two types of JavaScript equality.  The first of the two equalities is known as strict equality which shows up in our code as ===.  The second of the two equalities is know as loose equality which shows up in our code as ==.
             </p><br>
             <p>
-              When comparing the equality of primitive JavaScript data types such as Booleans, Numbers, Strings, Undefined and Null both == and === will return true in the following examples, (true == true), (true === true), ('yes' == 'yes'), ('yes' === 'yes'), (1 == 1), (1 === 1), (undefined == undefined) and (undefined === undefined).
+              When comparing the equality of primitive JavaScript data types such as Booleans, Numbers, Strings, Undefined and Null, both == and === will return true in the following examples, (true == true), (true === true), ('yes' == 'yes'), ('yes' === 'yes'), (1 == 1), (1 === 1), (undefined == undefined) and (undefined === undefined).  When the interpreter compairs these values, it sees the same exact value and returns true.
             </p><br>
             <p>
-              As demonstrated above with primitive data types the === and == are comparing value.  When the comparisons see the same exact value they return a Boolean value of true.
+              Things change a bit when we start comparing different primitive values with ==, something called type coercion takes place.  All of the following examples will return a Boolean value of true during comparison, ('1' == 1), (true == 1), ([] == 0) and ('' == 0). This type coercion happens because the interpreter evaluates a string '1' and the number 1 both as truthy values and returns true.
             </p><br>
             <p>
-              Things change a bit when we start comparing different primitive values with ==, something called type coercion takes place. All of the following examples will return a Boolean value of true during comparison, ('1' == 1), (true == 1), ([] == 0) and ('' == 0). This type coercion happens because the interpreter evaluates a string '1' and the number 1 as a truthy value and returns true.
+              It is important to note that all of these examples shown in the previous paragraph would return false when using ===, it returns false because the interpreter is checking to see if the two comparators are the same exact value, no type coercion takes place.  This is why it is a best practice to pretty much always use strict equality.
             </p><br>
             <p>
-              It is important to note that all of these examples shown in the previous paragraph would return false when using ===.  It returns false because the interpreter is checking to see if the two comparators are the same exact value, no type coercion takes place.  This is why it is a best practice to pretty much always use strict equality.
+              Things change quite a bit when we move away from primitive data types and focus on object data types.  Object data types include arrays, functions and of course normal objects.  Keep in mind that arrays are array like objects and functions are really just objects that have the special ability to be called/invoked.
             </p><br>
             <p>
-              Things change quite a bit when we move away from primitive data types and focus on object data types.  Object data types include of course normal objects as well as arrays and functions.  Keep in mind that arrays are array like objects and functions are really just objects that have the special ability to be called/invoked.
+              Now when we compare object data types with === and ==, the interpreter is looking to see if those two values are stored in the exact same place in memory.  All of the following examples will return a Boolean value of false ([] == []), ([] === []), ({} == {}), ({} === {}), ( (function(){}) == (function(){}) ) and ( (function(){}) === (function(){}) ).
             </p><br>
             <p>
-              Now when we compare object data types with === and == the interpreter is looking to see if those two values are stored in the exact same place in memory.  All of the following examples with return a Boolean value of false ([] == []), ([] === []), ({} == {}), ({} === {}), ( (function(){}) == (function(){}) ) and ( (function(){}) === (function(){}) ).
-            </p><br>
-            <p>
-              Even though the values shown immediately above are the same, they are object data types and therefore are stored at different places in memory.  Even if an object, array or function has they same exact value as another object data type, it will always be stored at different places in memory, thus always returning false when using both == and ===.  Thank you for taking the time to read this article.
+              Even though the values being compaired immediately above are the same, they are object data types and therefore are stored at different places in memory.  Even if an object, array or function has the same exact value as another object data type, it will always be stored at different places in memory, thus always returning false when using both == and ===.  Thank you for taking the time to read this article.
             </p><br>
           </div>
           <div class="line">
