@@ -53,25 +53,51 @@
         </header>
         <div class="section background-white">
           <div class="line">
-            <h2 class="text-size-40 margin-bottom-30">The JavaScript Keyword 'This' <span class="text-size-20">- January 2017</span></h2>
+            <h2 class="text-size-40 margin-bottom-30">Strict Equality vs Loose Equality<span class="text-size-20">- 01/10/2017</span></h2>
             <hr class="break-small background-primary margin-bottom-30">
             <p>
-              Recently I was admitted into Hack Reactor’s Remote Program which is a life changing 12-week coding immersion program. During the first week or so we focused on learning more about scopes, closures, the keyword ‘this’, class instantiation patterns, time complexity, prototype chains and data structures. I found much of it fascinating and exciting, however knowing that further understanding of this content was paramount to my continued growth, I powered forward.
+              Today lets talk about two types of JavaScript equalities.  The first of the two equalities is known as strict equality aka the triple equal operator which shows up in our code as ===. The second of the two equalities know as loose equality aka the double equal operator shows up in our code as ==.
             </p><br>
             <p>
-              Previously I had seen the keyword ‘this’ while building constructor functions when completing the JavaScript track in Code Academy. At the time, it was quite confusing so I reached out to my coding buddy enquiring about its mystical powers. He mentioned that the keyword ‘this’ contains a lot of ‘gotchas’ and made the point that it would only become clearer with further study and practice.
+              When comparing the equality of primitive JavaScript data types such as Booleans, Numbers, Strings, Undefined and Null both == and === will return true in the following examples, (true == true), (true === true), ('yes' == 'yes'), ('yes' === 'yes'), (1 == 1), (1 === 1), (undefined == undefined) and (undefined === undefined).
             </p><br>
             <p>
-              Now that I am into my third week at Hack Reactor Remote, I know that the keyword ‘this’ is an auto-bound identifier intended to refer to an object during method or constructor function invocation. I also learned that there are five ways that the keyword ‘this’ can appear in your running code.
+              As demonstrated above with primitive data types the === and == are comparing value.  When the comparisons see the same exact value they return a Boolean value of true.
             </p><br>
             <p>
-              What helped was knowing that the first and most common way to use the keyword this is during method invocation where this is bound to the object that was left of the “call time dot”.
+              Things change a bit when we start comparing different primitive values with ==, something called type coercion takes place. All of the following examples will return a Boolean value of true during comparison, ('1' == 1), (true == 1), ([] == 0) and ('' == 0). This type coercion happens because the interpreter evaluates a string '1' and the number 1 as a truthy value and returns true.
             </p><br>
             <p>
-              The second and third ways to use the keyword this are inside the call and apply methods. The object passed into the first argument of their parameter list is what the keyword this is bound to.
+              It is important to note that all of these examples shown in the previous paragraph would return false when using ===.  It returns false because the interpreter is checking to see if the two comparators are the same exact value, no type coercion takes place.  This is why it is a best practice to pretty much always use strict equality.
             </p><br>
             <p>
-              The fourth and fifth binding patterns for the keyword ‘this’ are not useful as they bind themselves to the global object in the browser window. Examples would be when the keyword this is used in the global scope or when it is used in a free function invocation. Thank you for reading my post.
+              Things change quite a bit when we move away from primitive data types and focus on object data types.  Object data types include of course normal objects as well as arrays and functions.  Keep in mind that arrays are array like objects and functions are really just objects that have the special ability to be called/invoked.
+            </p><br>
+            <p>
+              Now when we compare object data types with === and == the interpreter is looking to see if those two values are stored in the exact same place in memory.  All of the following examples with return a Boolean value of false ([] == []), ([] === []), ({} == {}), ({} === {}), ( (function(){}) == (function(){}) ) and ( (function(){}) === (function(){}) ).
+            </p><br>
+            <p>
+              Even though the values shown immediately above are the same, they are object data types and therefore are stored at different places in memory.  Even if an object, array or function has they same exact value as another object data type, it will always be stored at different places in memory, thus always returning false when using both == and ===.  Thank you for taking the time to read this article.
+            </p><br>
+          </div>
+          <div class="line">
+            <hr>
+            <h2 class="text-size-40 margin-bottom-30">The JavaScript Keyword 'This' <span class="text-size-20">- 01/03/2017</span></h2>
+            <hr class="break-small background-primary margin-bottom-30">
+            <p>
+              In my early days of studying JavaScript fundamentals, I remember seeing the keyword ‘this’ for the first time while building constructor functions in the pseudo-classical instantiation pattern. Even after reading up on the subject I was still a bit confusing so I reached out to my coding buddy enquiring about its mystical powers. He mentioned that the keyword ‘this’ contains a lot of ‘gotchas’ and made the point that it would only become clearer with further study and practice.
+            </p><br>
+            <p>
+              Now after said study and practice I know that the keyword ‘this’ is an auto-bound identifier intended to refer to an object predominantly used during method or constructor function invocation. I also learned that there are five ways that the keyword ‘this’ can appear in your running code.
+            </p><br>
+            <p>
+              The first and most common way to use the keyword this is during method invocation where ‘this’ is bound to the object that was left of the “call time dot”.
+            </p><br>
+            <p>
+              The second and third ways to use the keyword ‘this’ are inside the call and apply methods. The object passed into the first argument of their parameter list is what the keyword ‘this’ is bound to.
+            </p><br>
+            <p>
+              The fourth and fifth binding patterns for the keyword ‘this’ are not useful as they bind themselves to the global object in the browser window. Examples would be when the keyword ‘this’ is used in the global scope or when it is used in a free function invocation. Thank you for reading my post.
             </p><br>
           </div>
         </div>
