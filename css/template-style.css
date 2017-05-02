@@ -10,7 +10,7 @@ p {
   line-height: 1.6rem;
 }
 a, a:link, a:visited, a:hover, a:active {
-color: #777;
+  color: #777;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #000;
@@ -641,7 +641,7 @@ aside.aside-left {
 
 /* Containers */
 .section  {
-  padding: 6rem 1.25rem;
+  padding: 3rem 1.25rem;
 }
 .section-small-padding  {
   padding: 2.5rem 1.25rem;
@@ -2071,4 +2071,13 @@ video {
   .carousel-3-blocks {
     padding: 0;
   }
+}
+.par {
+  margin-top: 20px;
+}
+.img {
+    border: solid 3px transparent;
+}
+.img:hover {
+    border-color: #C81010;
 }

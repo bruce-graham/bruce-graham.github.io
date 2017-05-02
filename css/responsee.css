@@ -40,7 +40,8 @@ b,strong {font-weight:700;}
 .text-center {text-align:center!important;}
 .text-right {text-align:right!important;}
 img {
-  border:0;
+  border:1px;
+  border-color: #C81010;
   display:block;
   height:auto;
   max-width:100%;
