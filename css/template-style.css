@@ -2075,9 +2075,13 @@ video {
 .par {
   margin-top: 20px;
 }
-.img {
-    border: solid 3px transparent;
+.hover {
+    border: solid 2px transparent;
 }
-.img:hover {
+.hover:hover {
     border-color: #C81010;
+}
+.border {
+  border-color: black;
+  border: solid 2px
 }
