@@ -1,6 +1,6 @@
-const token = '11393795.163594c.5d07d150cce04632823d439e2bc26a5a';
-const userid = 11393795;
-const num_photos = 18;
+var token = '11393795.163594c.5d07d150cce04632823d439e2bc26a5a';
+var userid = 11393795;
+var num_photos = 18;
 
 $.ajax({
   url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent',
@@ -8,13 +8,13 @@ $.ajax({
   type: 'GET',
   data: {access_token: token, count: num_photos},
   success: function (data) {
-    for(let x in data.data) {
+    for(var x in data.data) {
       $('.margin').append('<div class="s-12 m-6 l-4"><div class="image-with-hover-overlay image-hover-zoom margin-bottom"><a target="_blank" href="' + data.data[x].link +'"><div class="image-hover-overlay background-primary"><div class="image-hover-overlay-content text-center padding-2x"><p>CLICK TO OPEN IN INSTAGRAM<br><br>QUOTE ASSOC. w/ PHOTO: - ' + data.data[x].caption.text + '</p></div></div><img src="' + data.data[x].images.standard_resolution.url + '" alt="" title="Photography" /></div></a></div>');
     }
     $(".section.loading.background-white").removeClass('loading');
   },
-  error: function(data){
-    throw data;
+  error: function(err){
+    throw err;
   }
 });
 
