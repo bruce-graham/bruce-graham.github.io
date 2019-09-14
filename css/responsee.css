@@ -549,3 +549,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 .loading {
   background: transparent url('https://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif') center no-repeat;
 }
+
+.contact-button {
+  min-width: 105px;
+}
