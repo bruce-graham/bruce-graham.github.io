@@ -1,3 +1,6 @@
+var dateObject = new Date();
+var year = dateObject.getYear() + 1900;
+
 $(document).ready(function() {
   $('.position-absolute').html('\
     <nav class="background-transparent background-transparent-hightlight full-width sticky">\
@@ -23,7 +26,7 @@ $(document).ready(function() {
   $('.footer-dynamic').html('\
     <section class="padding background-dark full-width">\
       <div class="s-12 l-6">\
-        <p class="text-size-12">Copyright © 2018, Bruce Graham</p>\
+        <p class="text-size-12">Copyright © ' + year + ', Bruce Graham</p>\
       </div>\
       <div class="s-12 l-6"></div>\
     </section>\
