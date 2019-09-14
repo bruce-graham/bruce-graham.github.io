@@ -37,7 +37,7 @@
                   <div class="float-left">
                     <i class="icon-sli-envelope icon2x text-primary"></i>
                   </div>
-                  <div class="margin-left-70 margin-s-left-0 margin-bottom">
+                  <div class="margin-left-70 margin-s-left-0 margin-bottom contact-button">
                     <span id="method1">m<b>@</b>e@d<b>no</b>oma<b>.com</b>in.com</span>
                   </div>
                 </div>
@@ -49,7 +49,7 @@
                     <i class="icon-sli-social-github icon2x text-primary"></i>
                   </div>
                 <div class="margin-left-70 margin-s-left-0 margin-bottom">
-                  <a target="_blank" class="button button-dark-stroke text-size-12" href="https://github.com/bruce-graham">GitHub</a>
+                  <a target="_blank" class="button button-dark-stroke text-size-12 contact-button" href="https://github.com/bruce-graham">GitHub</a>
                 </div>
                 </div>
               </div>
@@ -60,7 +60,7 @@
                     <i class="icon-sli-social-linkedin icon2x text-primary"></i>
                   </div>
                   <div class="margin-left-70 margin-s-left-0 margin-bottom">
-                    <a target="_blank" class="button button-dark-stroke text-size-12" href="https://www.linkedin.com/in/brucegraham11">LinkedIn</a>
+                    <a target="_blank" class="button button-dark-stroke text-size-12 contact-button" href="https://www.linkedin.com/in/brucegraham11">LinkedIn</a>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@
                     <i class="icon-sli-user-following icon2x text-primary"></i>
                   </div>
                   <div class="margin-left-70 margin-s-left-0 margin-bottom">
-                    <a target="_blank" class="button button-dark-stroke text-size-12" href="https://angel.co/brucegraham">AngelList</a>
+                    <a target="_blank" class="button button-dark-stroke text-size-12 contact-button" href="https://angel.co/brucegraham">AngelList</a>
                   </div>
                 </div>
               </div>
@@ -82,7 +82,7 @@
                     <i class="icon-sli-social-twitter icon2x text-primary"></i>
                   </div>
                   <div class="margin-left-70 margin-s-left-0 margin-bottom">
-                    <a target="_blank" class="button button-dark-stroke text-size-12" href="https://twitter.com/brucegraham11">Twitter</a>
+                    <a target="_blank" class="button button-dark-stroke text-size-12 contact-button" href="https://twitter.com/brucegraham11">Twitter</a>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@
                     <i class="icon-sli-social-instagram icon2x text-primary"></i>
                   </div>
                 <div class="margin-left-70 margin-s-left-0 margin-bottom">
-                  <a target="_blank" class="button button-dark-stroke text-size-12" href="https://www.instagram.com/brucegraham/">Instagram</a>
+                  <a target="_blank" class="button button-dark-stroke text-size-12 contact-button" href="https://www.instagram.com/brucegraham/">Instagram</a>
                 </div>
                 </div>
               </div>
@@ -111,8 +111,14 @@
     <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
     <script type="text/javascript" src="js/template-scripts.js"></script>
     <script type="text/javascript">
-      var s="=b!dmbtt>#cvuupo!cvuupo.ebsl.tusplf!ufyu.tj{f.23#!isfg>#nbjmup;csvdfhsbibn22Ahnbjm/dpn#?Fnbjm=0b?";
-      m=""; for (i=0; i<s.length; i++) m+=String.fromCharCode(s.charCodeAt(i)-1); document.getElementById('method1').innerHTML=(m);
+      var s = "=b!dmbtt>#cvuupo!cvuupo.ebsl.tusplf!ufyu.tj{f.23#!isfg>#nbjmup;csvdfhsbibn22Ahnbjm/dpn#?Fnbjm=0b?";
+      var m = "";
+
+      for (var i = 0; i < s.length; i++) {
+        m += String.fromCharCode( s.charCodeAt(i) - 1 );
+        document.getElementById('method1').innerHTML = (m);
+      }
+      jQuery('#method1').children().addClass('contact-button');
     </script>
   </body>
 </html>
