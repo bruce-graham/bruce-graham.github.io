@@ -14,9 +14,7 @@ $(document).ready(function() {
         <p class="nav-text"></p>\
         <ul class="right chevron">\
           <li><a href="about.html">About</a></li>\
-          <li><a href="portfolio.html">Portfolio</a></li>\
           <li><a href="resume.html">Resume</a></li>\
-          <li><a href="gallery.html">Gallery</a></li>\
           <li><a href="contact.html">Contact</a></li>\
         </ul>\
       </div>\
