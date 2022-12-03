@@ -19,3 +19,7 @@
 .resume {
 	border:  1px solid black;
 }
+
+.bruce-image {
+	max-width: 200px;
+}
