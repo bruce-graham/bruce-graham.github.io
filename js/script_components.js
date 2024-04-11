@@ -22,11 +22,11 @@ $(document).ready(function() {
   ');
 
   $('.footer-dynamic').html('\
-    <section class="padding background-dark full-width">\
+    <footer class="footer padding background-dark full-width">\
       <div class="s-12 l-6">\
         <p class="text-size-12">Copyright © ' + year + ', Bruce Graham</p>\
       </div>\
       <div class="s-12 l-6"></div>\
-    </section>\
+    </footer>\
   ');
 });
