@@ -36,3 +36,22 @@ body {
 	margin: 0 auto;
 	max-width: 1120px;
 }
+
+i.icon-sli-envelope.icon2x.text-primary,
+i.icon-sli-social-github.icon2x.text-primary,
+i.icon-sli-social-linkedin.icon2x.text-primary,
+i.icon-sli-social-instagram.icon2x.text-primary {
+	display: inline-block;
+	padding-right: 25px;
+	margin-top: 3px;
+}
+
+.contact-button {
+	min-width: 105px;
+}
+
+@media (max-width: 500px) {
+	.bruce-image {
+		margin-bottom: 25px;
+	}
+}
